@@ -12,16 +12,7 @@ const Footer = () => {
      
         <div className="container-fluid pt-5">
        <div className="row">
-          <div class="col-lg-3">
-          <h1> <span className='brand-name'>{brandName}</span></h1>
-          <img src={camera2} alt="" style={{ width:"10%", borderRadius:"10px"  }}/>
-        </div>
-          <div class="col-lg-3">
-          <h1>Reelconnect</h1>
-          <p>Connecting creators since 2020. Find collaborators, <br />showcase projects, and bring cinematic visions to life.</p>
-           <Link to="/RegistrationForm"><button type="button" class="btn-dark">Join Community</button></Link>
-        </div>
-          <div class="col-lg-3">
+        <div className="col-6 col-md-6 col-lg-3">
          <h1>Explore</h1>
          <ul>
           <Link to="/Vision" style={{textDecoration:"none"}}><li>Our Vision</li></Link>
@@ -31,7 +22,17 @@ const Footer = () => {
           <Link to="/Crew" style={{textDecoration:"none"}}><li>Crew members Community</li></Link>
          </ul>
         </div>
-          <div class="col-lg-3">
+         <div className="col-6 col-md-6 col-lg-3">
+          <h1>Reelconnect</h1>
+          <p>Connecting creators since 2020. Find collaborators, <br />showcase projects, and bring cinematic visions to life.</p>
+           <Link to="/RegistrationForm"><button type="button" class="btn-dark">Join Community</button></Link>
+        </div>
+         <div className="col-6 col-md-6 col-lg-3">
+          <h1> <span className='brand-name'>{brandName}</span></h1>
+          <img src={camera2} alt="" style={{ width:"10%", borderRadius:"10px"  }}/>
+        </div>
+        
+          <div className="col-6 col-md-6 col-lg-3">
           <h1>Follow Us</h1>
           <div>
           <a href="https://facebook.com" style={{ padding:"10px"}}><FaFacebook size={30}/></a>

@@ -8,7 +8,7 @@ import crew from "../images/slide4.jpg"
 const Carousel = () => {
   return (
     <div>
-       <div className="team" style={{ textAlign:"center" }} data-aos="fade-up" data-aos-duration="3000">
+       <div className="team" style={{ textAlign:"center" }}>
         <p className='team-p'>HOW IT WORKS</p>
         <h2 className='team-h'>Join our <span style={{ color:"red" }}>community</span></h2>
     

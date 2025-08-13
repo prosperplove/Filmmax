@@ -26,7 +26,7 @@ const Director = () => {
   }, []);
 
   return (
-    <div>
+    <div style={{ paddingTop:"10vh" }}>
       <main>
         <div className="contain"  id='director'>
         <div className="container py-4" id='direct'>

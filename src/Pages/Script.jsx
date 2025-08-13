@@ -26,7 +26,7 @@ const Script = () => {
   }, []);
 
   return (
-    <div>
+    <div style={{ paddingTop:"10vh" }}>
       <main>
        
       <div className="container-fluid py-4" style={{ background:"linear-gradient(to top,rgb(151, 146, 146),  rgb(250, 249, 247))"}} id='script-page'>
@@ -54,7 +54,7 @@ const Script = () => {
       <div className="script-sub2" style={{ justifyContent:"center", display:"flex" }} id='script-page'>
         <button type="button" class="btn btn-danger"  data-aos="fade-up">Quotes</button>
          </div>
-         <div className="card-container" style={{ padding:"25px" }} id='script-page'>
+         <div className="card-container" id='script-page'>
           <div className='row'>
            <div class="col-6 col-md-4 col-lg-4">
           <div class="card" data-aos="flip-left">
@@ -139,7 +139,7 @@ const Script = () => {
 </div>
  </div>
 
- <div className="contain" style={{  backgroundColor:"rgb(219, 219, 181)"}} id='script-page'>
+ <div className="contain" style={{  backgroundColor:"rgb(219, 219, 181)", paddingTop:"2vh"}} id='script-page'>
   <div className="row">
   <div className='col-12 col-md-6 col-lg-6'>
     <img src={scriptOne} alt="" style={{ borderTopRightRadius:"50px", height:"100%", width:"100%" }} />
@@ -149,11 +149,10 @@ const Script = () => {
     <p>Join thousands of story tellers in our upcoming <span className='brand-name'>{brandName}</span> 2026 summer event.
     come let's make history together.
  </p>
- <EventForm/>
   </div>
   </div>
  </div>
- 
+   <EventForm/>
  <Questions/>
  
  </main>

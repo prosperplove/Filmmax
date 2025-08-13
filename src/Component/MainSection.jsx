@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import avatar from "../images/avatar.png"
 import group from "../images/group.png"
 import camera from "../images/camera.png"
-import camera2 from "../images/camera2.jpg"
-import camera3 from "../images/camera3.jpg"
+import camera2 from "../images/film1.jpg"
+import film from "../images/film.jpg"
 import sideImage from "../images/sideImage.jpg"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -27,8 +27,8 @@ const MainSection = () => {
         
         <div className="section">
         <div className="text-overlay">
-       <h1>Build your Professional Career <br /> with <span className='brand-name'>{brandName}</span></h1>
-       <p>Filmmax is a bridge between the Entertainment industry and pure talents. <br /> built to shape the industry, where creativity meets demands </p>
+       <h1 style={{ fontSize:"2.5rem" }}>Build your Professional Career <br /> with <span className='brand-name'>{brandName}</span></h1>
+       <p style={{ fontSize:"1rem" }}>Filmmax is a bridge between the Entertainment industry and pure talents. <br /> built to shape the industry, where creativity meets demands </p>
        <Link to="/RegistrationForm"><button type="button" class="btn btn-danger">Become a member</button></Link>
           </div>
         </div>
@@ -64,11 +64,11 @@ const MainSection = () => {
    
     <div className="section-3">
     <div className='row'>
-        <div className='sub-section col-12 col-md-6 col-lg-6'>
+        <div className='sub-section col-12 col-md-12 col-lg-6'>
 <img src={camera2} alt="" />
 </div>
-<div className='col-12 col-md-6 col-lg-6'>
-<div className='about py-5' data-aos="fade-up" data-aos-duration="3000">
+<div className='col-12 col-md-12 col-lg-6'>
+<div className='about py-5'>
     <h1>ABOUT COMPANY</h1>
     <h2>Talent station, where talents meets <span style={{ color:"red" }}>opportunity</span></h2>
     <p>Have you been in a depressing situation where you think your skill is not appreciated enough, due to lack of opportunities? <span className='brand-name'>{brandName}</span> connects you to your dream projects, actors and collaborations</p>
@@ -80,6 +80,9 @@ const MainSection = () => {
 </div>
 </div>
 </div>
+</div>
+<div className="container py-4" style={{ justifyContent:"center" }}id='film'>
+    <img src={film} alt="" />
 </div>
 <Carousel/>
 <Testimonials/>

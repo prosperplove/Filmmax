@@ -21,15 +21,12 @@ const Vision = () => {
   }, []);
 
   return (
-    <div>
+    <div style={{paddingTop:"10vh" }}>
         <main>
-          
+             
            <div className='container-fluid' id='visionMission'  style={{ backgroundColor:"rgb(242, 248, 246)"}}>
     <div className="row">
-       <div className='col-12 col-md-6 col-lg-6'>
-          <img src={wall} alt=""/>
-          </div>
-      <div className='col-12 col-md-6 col-lg-6' data-aos="fade-up"  style={{ padding:"45px"}}>
+      <div className='col-12 col-md-12 col-lg-6' data-aos="fade-up"  style={{ padding:"45px"}}>
       <h1>Our Vision:</h1>
       <p> <span style={{ fontSize:"1.5rem", color:"red" }}>"</span>To cultivate a globally interconnected  creatives ecosystem where every film professional, regardless of role or background, thrive through seamless collaboration, trusted community, and lifelong opportunity-empowering storytellers to shape cinema's future,together.<span style={{ fontSize:"1.5rem", color:"red" }}>"</span>
         </p>
@@ -46,7 +43,11 @@ const Vision = () => {
           <li>A Supportive Community: Cultivating a culture of mutual support, mentorship, and shared passion that fuels continuous growth.</li>
           </ul></p>
           </div>
-         
+          <div className='col-12 col-md-12 col-lg-6'>
+        <div className='wall'>
+          <img src={wall} alt=""/>
+          </div>
+          </div>
           </div>
   </div>
   <div className="mission-vision">

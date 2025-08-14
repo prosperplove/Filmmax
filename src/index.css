@@ -5,12 +5,13 @@ body{
 }
 
 
+/* Navbar styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgb(230, 223, 223);
+  background-color: rgb(180, 173, 173);
   position: fixed;
   width: 100%;
   top: 0;
@@ -28,15 +29,13 @@ body{
   width: 5vh;
   height: 25px;
   justify-content: space-between;
-  padding-top: 5px;
 }
 
 .hamburger div {
   height: 3px;
-  background-color: rgb(105, 4, 4);
+  background-color: white;
   width: 100%;
   transition: all 0.3s;
-  
 }
 
 /* Navigation links styles */
@@ -47,7 +46,7 @@ body{
 }
 
 .nav-links li a {
-  color: rgb(7, 7, 7);
+  color: white;
   text-decoration: none;
   font-size: 18px;
   padding: 8px 12px;
@@ -437,7 +436,7 @@ font-weight: bold;
 #visionMission img{
  width: 100%;
   height: auto;
-  border-radius: 0px;
+  border-radius: 15px;
   object-fit: cover;
   display: block;
 }

@@ -7,9 +7,10 @@ const NavBar = () => {
   const brandName="Filmmax"
   return (
     <div>
-   <nav className="navbar fixed-top">
+    <nav className="navbar fixed-top">
     <div className="logo" style={{ color:"white", fontWeight:"bold",fontSize:"2rem" }}> 
-       <Link to="/Home" class="navbar-brand" href="#"><img src={camera2} alt="" style={{ width:"10%", borderRadius:"10px" }}/><span className='brand-name' style={{ padding:'1vh' }}>{brandName}</span> </Link></div>
+        <Link to="/" style={{ textDecoration:"none", color:"white" }}> <img src={camera2} style={{ width:"60px" }} alt="" />
+        <span className='brand-name'>Filmmax</span></Link></div>
        
     <input type="checkbox" id="menu-toggle" />
     <label for="menu-toggle" class="hamburger">
@@ -18,9 +19,9 @@ const NavBar = () => {
       <div></div>
     </label>
     <ul className="nav-links">
-      <li><Link to="/Home">Home</Link></li>
+      <li><Link to="/">Home</Link></li>
       <li><Link to="/Vision">Mission</Link></li>
-      <li><Link to="/SignIn">Login</Link></li>
+      <li><Link to="/SignUp">Login</Link></li>
     </ul>
   </nav>
     </div>

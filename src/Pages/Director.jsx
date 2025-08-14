@@ -26,7 +26,7 @@ const Director = () => {
   }, []);
 
   return (
-    <div style={{ paddingTop:"10vh" }}>
+    <div >
       <main>
         <div className="contain"  id='director'>
         <div className="container py-4" id='direct'>
@@ -38,13 +38,13 @@ const Director = () => {
           </p>
         </div>
           <div className= "col-12 col-md-6 col-lg-6" id='directorPhoto'>
-            <img src={director} alt="" style={{ padding:"25px" }}/>
+            <img src={director} alt="" style={{ width:"100%", borderRadius:'10px', paddingTop:"60px"}}/>
           </div>
         </div>
         </div>
         <div className="container" id='directive' data-aos="fade-up">
              <p>We have the largest community of professional directors on  <span className='brand-name'>{brandName}</span>.<br />
-           shaping the face of entertainment and leveraging a high numbers of creatives into the International market,<br /> </p>
+           shaping the face of entertainment and leveraging a high numbers of creatives into the International market </p>
             <Link to="/RegistrationForm"><button>Become a Member</button></Link>
             <div className='social-media'>
             <FaTwitter/>

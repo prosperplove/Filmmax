@@ -16,7 +16,7 @@ const Crew = () => {
   }, []);
 
   return (
-    <div style={{ paddingTop:"10vh" }}>
+    <div>
         <main>
   <div className='contain py-4'  style={{ backgroundColor:"rgb(196, 223, 212)", padding:"10px"}}>
     <div className="row">
@@ -30,7 +30,7 @@ const Crew = () => {
           </p>
           </div>
           <div className='col-12 col-md-6 col-lg-6'>
-          <img src={crew} alt="" style={{ width:"100%"}} />
+          <img src={crew} alt=""style={{ width:"100%", borderRadius:'10px', paddingTop:"60px"}} />
           </div>
           </div>
   </div>

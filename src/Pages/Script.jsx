@@ -26,13 +26,13 @@ const Script = () => {
   }, []);
 
   return (
-    <div style={{ paddingTop:"10vh" }}>
+    <div>
       <main>
        
       <div className="container-fluid py-4" style={{ background:"linear-gradient(to top,rgb(151, 146, 146),  rgb(250, 249, 247))"}} id='script-page'>
           <div className='row'>
             <div className='col-12 col-md-6 col-lg-6'>
-      <img src={script} alt="" style={{ width:"100%", borderRadius:'10px'}}/>
+      <img src={script} alt="" style={{ width:"100%", borderRadius:'10px', paddingTop:"60px"}}/>
       </div>
       <div className='col-12 col-md-6 col-lg-6'>
       <div className='script'  data-aos="fade-up" style={{ margin:"65px" }}>
@@ -40,7 +40,7 @@ const Script = () => {
         <p style={{ fontSize:'x-large', fontWeight:"500",backgroundColor:"plum", display:"inline-block", borderRadius:"5px" }}>STORY TELLING</p>
         <h1 style={{ fontSize:"xx-large", fontWeight:"bold" }}>Share your story</h1>
         <p style={{ fontSize:"medium" }}>Join global network of story tellers</p>
-        <Link to="/RegistrationForm"><button type="button" style={{ marginLeft:"10%" }} class="btn-dark">Become a member</button></Link>
+        <Link to="/RegistrationForm"><button type="button" class="btn-dark">Become a member</button></Link>
       </div>
       </div>
           </div>
@@ -48,7 +48,7 @@ const Script = () => {
 
       <div className="script-sub"  style={{ backgroundColor:"rgb(43, 40, 40)", color:"white"}}>
         <div  data-aos="fade-up">
-        <h2 style={{ fontWeight:"700", textAlign:"center" }}>Building trust through real<br /> experiences</h2>
+        <h2 style={{ fontWeight:"700", textAlign:"center"}}>Building trust through real<br /> experiences</h2>
         <p style={{ fontSize:"x-large", textAlign:"center" }}>Creating contents that speaks life when reading. create life, create purpose.</p>
      </div>
       <div className="script-sub2" style={{ justifyContent:"center", display:"flex" }} id='script-page'>
